@@ -43,7 +43,8 @@ def print_indices(items):
         1 Jeep
         2 Volvo
     """
-
+    for item in items:
+        print index(items) + " " + item
     print "Nothing at all"
 
 
@@ -74,8 +75,14 @@ def foods_in_common(foods1, foods2):
         []
 
     """
-
-    return ['the wrong thing']
+    common = []
+    foods1 = set(foods1)
+    foods2 = set(foods2)
+    in_common = foods1 & foods2
+    for item in in_common:
+        common.append(item)
+    list.sort(common)
+    return common
 
 
 def every_other_item(items):

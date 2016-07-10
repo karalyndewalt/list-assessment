@@ -1,8 +1,10 @@
-"""List Assessment 
+"""List Assessment
 
 Edit the functions until all of the doctests pass when
 you run this file.
 """
+
+# started at 9:49pm
 
 
 def all_odd(numbers):
@@ -16,8 +18,11 @@ def all_odd(numbers):
         >>> all_odd([2, -6, 8])
         []
     """
-
-    return ['the wrong thing']
+    odd_numbers = []
+    for num in numbers:
+        if num % 2 != 0:
+            odd_numbers.append(num)
+    return odd_numbers
 
 
 def print_indices(items):

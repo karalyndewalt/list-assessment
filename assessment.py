@@ -123,8 +123,12 @@ def largest_n_items(items, n):
         >>> largest_n_items([3, 3, 3, 2, 1], 2)
         [3, 3]
     """
-
-    return []
+    if n == 0:
+        mess = []
+        return mess
+    else:
+        list.sort(items)
+    return items[-n:]
 
 
 #####################################################################
